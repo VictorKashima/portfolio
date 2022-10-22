@@ -12,7 +12,7 @@
 
 .list {
     list-style: none;
-    display: flex;
+    /* display: flex; */
 }
 
 nav ul li {
@@ -32,7 +32,7 @@ nav ul li a:hover {
 }
 
 .logo {
-    float: left;
+    /* float: left; */
     height: 50px;
     width: 50px;
 }
