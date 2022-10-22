@@ -1,13 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat&display=swap');
 
 * {
     transition: .5s;
 }
 
+.fade {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #000030, #000077, #000030);
+    background-size: 400% 400%;
+    position: relative;
+    animation: colors 15s  ease-in-out infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .navbar {
-    margin-top: -0.9%;
-    background-image:linear-gradient(35deg, red, rgb(200, 0, 0), red);
+    margin-top: -1%;
+    background-image:linear-gradient(to bottom, rgb(10,10,10),rgba(5, 5, 5, 0)90%);
 }
 
 .list {
@@ -32,8 +57,19 @@ nav ul li a:hover {
 }
 
 .logo {
-    padding-left: 100px;
+    padding: 10px 100px;
     float: left;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;  
+    text-align: center;
+    color:white;
+}
+
+#text {
+    color: white;
 }
