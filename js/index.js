@@ -1,1 +1,1 @@
-document.querySelector('#text').innerHTML="Hello World!";
+console.log("Hello World! Help Me");
