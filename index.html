@@ -19,26 +19,28 @@
 
 <body>
 
+<header>
     <nav class="navbar">
-        <ul class="list">
-            <img src="/images/VictorKashima-FavIcon2.png" alt="Logo" class="logo">
-            <li onclick="eventoClick()"><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="www.github.com/VictorKashima">CONTACT ME</a></li>
-        </ul>
+        <img src="/images/VictorKashima-FavIcon2.png" alt="Logo" class="logo">
+        <div class="list">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#eu">ABOUT ME</a></li>
+                <li><a href="#bloco">CONTACT ME</a></li>
+            </ul>
+        </div>
     </nav>
+</header>
 
-<div class="title">
-    <h1>Bem vindo ao meu portfólio</h1>
+<div id="eu" class="whoami">
+    <p>
+        Victor Kashima
+    </p>
 
 </div>
 
-<p id="texto">
-    Meu nome é Victor Kashima e a porcaria do Java Script não quer funcionar :D. Aqui em baixo está uma foto da minha pessoa.
-</p>
-
-<div class="block">
-    <img class="car" src="/images/carro.jpg">
+<div id="bloco" class="block">
+    
 </div>
 
 <script src="/js/index.js"></script>
