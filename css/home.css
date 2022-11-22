@@ -7,9 +7,6 @@
 * {
     transition: .5s;
     scroll-behavior: smooth;
-}
-
-html, body{
     margin: 0;
     padding: 0;
 }
@@ -50,9 +47,9 @@ nav ul li {
 }
 
 nav ul li a {
-    padding: 5px;
+    padding: 0px 5px;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: black;
@@ -73,7 +70,7 @@ nav ul li a:hover {
     height: 100vh;
     max-height: auto;
     background-size: 300% 300%;
-    background-image: linear-gradient(to bottom, #091E53, #122B71, #1C388D, #2547AD, #2B53C9);
+    background-image: linear-gradient(to bottom, #091E53, #122B71, #1C388D, #2547AD);
     animation: colors 15s ease-in-out infinite;
 }
 
@@ -113,15 +110,57 @@ nav ul li a:hover {
     font-size: 40px;
 }
 
-#projects {
-    padding: 0;
+.myprojects {
+    display: grid;
+    grid-template-rows: 2;
+    margin: 0 auto;
     height: 100vh;
+    width: 100%;
     background-image:linear-gradient(-50deg, #00154b, #091E53);
+    font-family: 'Poppins', sans-serif;
+}
+
+#projects h1 {
+    padding-top: 140px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.projectlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: white;
+    justify-items: center;
+    margin: 0;
+}
+
+.projectlist div {
+    border-radius: 50px;
+    padding: 20px 0px;
+    text-align: center;
+    background: yellow;
+    max-width: 450px;
+}
+
+.projectlist > div:nth-child(odd){
+    background: purple;
+}
+
+#projects img {
+    border-radius: 50px;
+    margin: 0 auto;
+    display: flex;
+    max-width: 400px;
 }
 
 #projects p {
+    color: white;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
