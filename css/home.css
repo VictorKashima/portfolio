@@ -20,7 +20,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 0px 100px;
+    height: 60px;
     align-items: center;
     background: white;
     width: 90%;
@@ -33,6 +34,10 @@ header {
     align-items: center;
     text-decoration: none;
     color: black;
+}
+
+.logo:hover {
+    font-size: 37px;
 }
 
 .list {
@@ -111,17 +116,17 @@ nav ul li a:hover {
 }
 
 .myprojects {
-    display: grid;
-    grid-template-rows: 2;
     margin: 0 auto;
     height: 100vh;
     width: 100%;
     background-image:linear-gradient(-50deg, #00154b, #091E53);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 30px;
 }
 
 #projects h1 {
-    padding-top: 140px;
+    padding: 150px 0px 80px 0px;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
@@ -131,37 +136,72 @@ nav ul li a:hover {
 
 .projectlist {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background: white;
+    grid-template-columns: repeat(3,  340px);
+    grid-column-gap: 100px;
+    justify-content: center;
+    letter-spacing: 0px;
+    font-size: 16px;
+}
+
+.project-conteiner {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
     justify-items: center;
-    margin: 0;
 }
 
 .projectlist div {
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 20px 0px;
     text-align: center;
-    background: yellow;
-    max-width: 450px;
+    background: rgba(0, 0, 50, 50%);
+    max-width: 340px;
 }
 
 .projectlist > div:nth-child(odd){
-    background: purple;
+    background: rgba(0, 0, 0, 50%);
+}
+
+.projectlist a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
+    width: 150px;
+}
+
+.projectlist a:hover {
+    color: rgb(30, 30, 30);
+    font-size: 22px;
 }
 
 #projects img {
-    border-radius: 50px;
+    border-radius: 30px;
     margin: 0 auto;
-    display: flex;
-    max-width: 400px;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+
+#projects h2 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    padding: 10px 0;
+    color: white;
 }
 
 #projects p {
     color: white;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    font-family: 'Audiowide', cursive;
     font-weight: 900;
     text-transform: uppercase;
+    padding-bottom: 10px;
+    max-width: 290px;
+    height: 120px;
 }
 
 #contactme {
