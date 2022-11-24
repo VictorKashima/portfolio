@@ -9,6 +9,7 @@
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -92,18 +93,23 @@ nav ul li a:hover {
     padding-top: 150px;
 }
 
+.divreturn {
+    display: flex;
+    justify-content: center;
+}
+
 .return {
-    width: auto;
-    height: auto;
-    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 7px 12px;
     background: black;
+    font-size: 22px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
 }
 
 .return:hover {
     cursor: grab;
-}
-
-.return a {
-    text-decoration: none;
-    color: white;
 }
