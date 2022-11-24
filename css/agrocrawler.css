@@ -67,7 +67,21 @@ nav ul li a:hover {
 
 .projectdesc {
     height: 100vh;
-    background: darkblue;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-50deg, #091E53, #2547AD, #122B71, #1C388D);
+    animation: colors 15s ease-in-out infinite;
+}
+
+@keyframes colors {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 50% 100%;
+}
+100% {
+    background-position: 0% 50%;
+}
 }
 
 .projectdesc h1, p {
