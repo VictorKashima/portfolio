@@ -264,6 +264,7 @@ footer h3 {
     }
     header {
         max-width: 600px;
+        z-index: 1;
         flex-wrap: nowrap;
         justify-content: space-around;
     }
