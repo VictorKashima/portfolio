@@ -268,7 +268,7 @@ footer h3 {
         justify-content: space-around;
     }
     .logo {
-        font-size: 40px;
+        font-size: 30px;
         margin: 0;
     }
     .list {
@@ -280,6 +280,7 @@ footer h3 {
     nav ul li a {
         padding: 0px 5px;
         letter-spacing: 0px;
+        font-size: 15px;
     }
 
     .aboutme {
@@ -294,7 +295,7 @@ footer h3 {
         font-size: 25px;
     }
     .myimage {
-        scale: 70%;
+        scale: 60%;
     }
 
     .myprojects {
