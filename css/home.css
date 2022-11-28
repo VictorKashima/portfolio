@@ -263,21 +263,23 @@ footer h3 {
         padding: 0;
     }
     header {
-        z-index: 2;
         max-width: 600px;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
     .logo {
-        margin-left: 15px;
-        font-size: 35px;
+        font-size: 40px;
+        margin: 0;
     }
     .list {
-        padding-right: 15px;
+        padding: 0;
     }
     nav ul li {
-        margin: 0 10px;
+        margin: 0 5px;
     }
     nav ul li a {
-        letter-spacing: 2px;
+        padding: 0px 5px;
+        letter-spacing: 0px;
     }
 
     .aboutme {
@@ -292,7 +294,7 @@ footer h3 {
         font-size: 25px;
     }
     .myimage {
-        scale: 80%;
+        scale: 70%;
     }
 
     .myprojects {
