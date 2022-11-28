@@ -329,35 +329,9 @@ footer h3 {
         max-width: 40px;
         padding-right: 5px;
     }
-    footer h1 {
-        font-family: 'Bebas Neue', cursive;
-        border-bottom: 3px solid blue;
-        border-radius: 3px;
-        letter-spacing: 2px;
-    }
-    footer h3 {
-        color: rgb(5,5,5);
-    }
-    .contact-card {
-        min-width: 150px;
-        padding: 10px;
-        margin: 20px 0;
-        border-bottom: 3px solid blue;
-        border-radius: 3px;
-    }
-    .contact-card a {
-        font-family: 'Poppins', sans-serif;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        justify-content: center;
-    }
-    .contact-card a:hover {
-        scale: 105%;
-    }
 
 
-
+    
 }
 
 /*<?php include("index.html"); ?>*/
