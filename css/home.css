@@ -255,7 +255,7 @@ footer h3 {
     scale: 105%;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     * {
         overflow-x: hidden;
@@ -331,7 +331,7 @@ footer h3 {
     }
 
 
-    
+
 }
 
 /*<?php include("index.html"); ?>*/
