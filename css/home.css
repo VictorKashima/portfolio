@@ -238,7 +238,7 @@ footer h3 {
 
 .contact-card {
     min-width: 150px;
-    padding: 15px;
+    padding: 10px;
     margin: 20px 0;
     border-bottom: 3px solid blue;
     border-radius: 3px;
@@ -254,6 +254,12 @@ footer h3 {
 
 .contact-card a:hover {
     scale: 105%;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        color: pink;
+    }
 }
 
 /*<?php include("index.html"); ?>*/
