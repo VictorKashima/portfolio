@@ -74,7 +74,6 @@ nav ul li a:hover {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    max-height: auto;
     background-size: 300% 300%;
     background-image: linear-gradient(-50deg, #091E53, #2547AD, #122B71, #1C388D);
     animation: colors 15s ease-in-out infinite;
@@ -257,9 +256,108 @@ footer h3 {
 }
 
 @media only screen and (max-width: 600px) {
-    .logo {
-        color: pink;
+
+    * {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
+    header {
+        z-index: 2;
+        max-width: 600px;
+    }
+    .logo {
+        margin-left: 15px;
+        font-size: 35px;
+    }
+    .list {
+        padding-right: 15px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a {
+        letter-spacing: 2px;
+    }
+
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+    }
+    .slogan h2 {
+        font-size: 40px;
+        justify-content: center;
+    }
+    .slogan h4 {
+        font-size: 25px;
+    }
+    .myimage {
+        scale: 80%;
+    }
+
+    .myprojects {
+        height: 100%;
+    }
+    .section-title {
+        padding: 130px 0px 60px 0px;
+        letter-spacing: 3px;
+        font-size: 35px;
+    }
+    .projectlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: 0px;
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+    .project-conteiner {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-items: center;
+    }
+    .projectlist div {
+        padding: 20px 20px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    footer img {
+        max-width: 40px;
+        padding-right: 5px;
+    }
+    footer h1 {
+        font-family: 'Bebas Neue', cursive;
+        border-bottom: 3px solid blue;
+        border-radius: 3px;
+        letter-spacing: 2px;
+    }
+    footer h3 {
+        color: rgb(5,5,5);
+    }
+    .contact-card {
+        min-width: 150px;
+        padding: 10px;
+        margin: 20px 0;
+        border-bottom: 3px solid blue;
+        border-radius: 3px;
+    }
+    .contact-card a {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        justify-content: center;
+    }
+    .contact-card a:hover {
+        scale: 105%;
+    }
+
+
+
 }
 
 /*<?php include("index.html"); ?>*/
