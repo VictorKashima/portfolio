@@ -69,7 +69,7 @@ nav ul li a:hover {
 .aboutme {
     display: grid;
     grid-template-columns: auto auto;
-    grid-column-gap: 200px;
+    grid-column-gap: 100px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -255,6 +255,99 @@ footer h3 {
     scale: 105%;
 }
 
+
+
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+
+    * {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        max-width: 1280px;
+        z-index: 1;
+        justify-content: space-between;
+    }
+    .logo {
+        font-size: 35px;
+        margin: 0;
+        padding-left: 50px;
+    }
+    .list {
+        padding-right: 100px;
+    }
+    nav ul li {
+        margin: 0 20px;
+    }
+    nav ul li a {
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    .aboutme {
+        grid-column-gap: 100px;
+    }
+    .slogan h2 {
+        font-size: 60px;
+        justify-content: center;
+    }
+    .slogan h4 {
+        font-size: 30px;
+    }
+    .myimage img {
+        border-radius: 30px;
+        max-height: 350px;
+    }
+
+    .section-title {
+        padding: 90px 0px 50px 0px;
+        letter-spacing: 3px;
+        font-size: 32px;
+    }
+    .projectlist {
+        grid-template-columns: repeat(3,  300px);
+        grid-column-gap: 50px;
+        font-size: 14px;
+    }
+    .projectlist div {
+        border-radius: 30px;
+        padding: 0px;
+    }
+    .button {
+        margin-bottom: 20px;
+    }
+    #projects img {
+        padding-top: 20px;
+        width: 250px;
+        height: 250px;
+    }
+    #projects h2 {
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 5px;
+        padding: 10px 0;
+        color: white;
+        font-size: 30px;
+    }
+    #projects p {
+        max-width: 250px;
+        height: 120px;
+    }
+
+    footer {
+        padding: 0 50px;
+    }
+    
+    footer img {
+        max-width: 30px;
+    }
+    
+    footer h1 {
+        font-size: 25px;
+    }
+
+}
+
+
 @media screen and (max-width: 600px) {
 
     * {
@@ -333,9 +426,6 @@ footer h3 {
         max-width: 40px;
         padding-right: 5px;
     }
-
-
-
 }
 
 /*<?php include("index.html"); ?>*/
