@@ -222,3 +222,121 @@ footer {
 .contact-card:hover {
     scale: 105%;
 }
+
+/* Responsive 600px*/
+@media screen and (max-width:600px) {
+    /* Nav Bar */
+    header {
+        justify-content: space-between;
+    }
+
+    .logo > a {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        letter-spacing: 0px;
+        margin: 0 10px;
+    }
+
+    /* About me section */
+    .aboutme {
+        justify-content:center;
+        background-size: 200% 200%;
+        flex-direction: column;
+    }
+
+    .slogan {
+        padding-bottom: 2rem;
+    }
+
+    .slogan h2 {
+        font-family: 'Audiowide', cursive;
+        font-size: 45px;
+    }
+
+    .slogan h4 {
+        font-size: 22px;
+    }
+
+    .myimage img {
+        border-radius: 30px;
+        max-width: 350px;
+    }
+
+    /* Projects */
+    .myprojects {
+        height: auto;
+    }
+
+    .section-title {
+        font-size: 25px;
+        padding-top: 3em;
+    }
+
+    .projectlist {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 3em;
+    }
+
+    .project-container {
+        max-width: 15em;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        border-radius: 20px;
+        margin-bottom: 1em;
+    }
+
+    .project-container img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .project-container h2 {
+        font-size: 20px;
+    }
+
+    .project-container p {
+        font-size: 14px;
+        height: auto;
+    }
+
+    .button {
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    /* Contact */
+    footer {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact-card {
+        width: 30%;
+    }
+
+    .contact-card img{
+        max-height: 2.5em;
+        border-radius: 5px;
+    }
+
+    footer h1 {
+        font-size: 30px;
+    }
+
+}
