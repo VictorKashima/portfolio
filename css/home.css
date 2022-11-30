@@ -1,82 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@100&family=Montserrat&family=Poppins:wght@300&display=swap');
 
 * {
     transition: .5s;
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 200;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: black;
+    background: #000000;
 }
 
+body a {
+    text-decoration: none;
+}
+
+/* Nav Bar */
 header {
-    position: fixed;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
-    background: white;
+    justify-content: flex-end;
+    position: fixed;
+    background: #FFFFFF;
     width: 100%;
+    max-height: auto;
+    padding: 5px 30px;
+    z-index: 5;
 }
 
 .logo {
+    margin-right: auto;
+}
+
+.logo > a {
     font-family: 'Audiowide', cursive;
     font-weight: 400;
-    font-size: 40px;
-    align-items: center;
-    text-decoration: none;
+    font-size: 35px;
     color: black;
-    margin-left: 100px;
 }
 
-.logo:hover {
-    scale: 90%;
-}
-
-.list {
-    list-style: none;
-    margin: 0;
+nav {
     display: flex;
     align-items: center;
-    padding-right: 100px;
 }
 
-nav ul li {
-    margin: 0 120px;
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
 nav ul li a {
-    padding: 0px 5px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
     color: black;
-    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 50px;
 }
 
-nav ul li a:hover {
-    color:rgb(50, 50, 50);
-}
-
+/* About me section */
 .aboutme {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 100px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     height: 100vh;
+    background: blue;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
     background-size: 300% 300%;
-    background-image: linear-gradient(-50deg, #091E53, #2547AD, #122B71, #1C388D);
-    animation: colors 15s ease-in-out infinite;
+    background-image: linear-gradient(-50deg, #041A49, #062974, #020f2b);
+    animation: colors 10s ease-in-out infinite;
 }
 
 @keyframes colors {
@@ -92,340 +85,140 @@ nav ul li a:hover {
 }
 
 .slogan {
-    padding: 0;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .slogan h2 {
-    display: flex;
-    align-items: center;
     font-family: 'Audiowide', cursive;
-    color: white;
-    font-size: 80px;
-    margin: 0;
+    font-size: 70px;
 }
 
 .slogan h4 {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 0;
-    font-size: 40px;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
 }
 
 .myimage img {
     border-radius: 30px;
+    max-width: 500px;
+}
+
+/* Projects */
+.myprojects {
+    height: 100vh;
+    position: relative;
+}
+
+.myprojects::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    z-index: -1;
+    background-image: url(/images/VictorKashima-Background2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 .section-title {
-    padding: 150px 0px 80px 0px;
-    margin: 0;
+    color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
-    font-size: 40px;
-}
-
-.myprojects {
-    margin: 0 auto;
-    height: 100vh;
-    width: 100%;
-    background-image:linear-gradient(-50deg, #00154b, #091E53);
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 4.5%;
 }
 
 .projectlist {
-    display: grid;
-    grid-template-columns: repeat(3,  340px);
-    grid-column-gap: 100px;
-    justify-content: center;
-    letter-spacing: 0px;
-    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
 }
 
-.project-conteiner {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    justify-items: center;
-}
-
-.projectlist div {
+.project-container {
+    max-width: 20%;
+    background: rgba(0, 0, 30, 0.7);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
     border-radius: 30px;
-    padding: 20px 0px;
     text-align: center;
-    background: rgba(0, 0, 50, 50%);
-    max-width: 340px;
 }
 
-.projectlist > div:nth-child(odd){
-    background: rgba(0, 0, 0, 50%);
+.project-container img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.project-container h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 2% 0 1%;
+}
+
+.project-container p {
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 5%;
+    height: 7em;
 }
 
 .button {
-    text-decoration: none;
+    background: #FFFFFF;
+    padding: 2% 5%;
+    border-radius: 10px;
+    font-weight: 900;
     color: black;
-    background: white;
-    font-size: 22px;
-    border-radius: 5px;
+    text-transform: uppercase;
     box-shadow: 0px 0px 10px black;
-    width: 160px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .button:hover {
-    color: rgb(30, 30, 30);
-    font-size: 24px;
-}
-
-#projects img {
-    border-radius: 30px;
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-}
-
-#projects h2 {
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
-    padding: 10px 0;
-    color: white;
-    font-size: 30px;
-}
-
-#projects p {
-    color: white;
-    margin: 0 auto;
-    font-family: 'Audiowide', cursive;
-    font-weight: 900;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    max-width: 290px;
-    height: 120px;
-}
-
-footer {
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 100px;
-}
-
-footer img {
-    max-width: 40px;
-    padding-right: 5px;
-}
-
-footer h1 {
-    font-family: 'Bebas Neue', cursive;
-    border-bottom: 3px solid blue;
-    border-radius: 3px;
-    letter-spacing: 2px;
-}
-
-footer h3 {
-    color: rgb(5,5,5);
-}
-
-.contact-card {
-    min-width: 150px;
-    padding: 10px;
-    margin: 20px 0;
-    border-bottom: 3px solid blue;
-    border-radius: 3px;
-}
-
-.contact-card a {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    justify-content: center;
-}
-
-.contact-card a:hover {
     scale: 105%;
 }
 
-
-
-@media screen and (min-width: 600px) and (max-width: 1280px) {
-
-    * {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        max-width: 1280px;
-        z-index: 1;
-        justify-content: space-between;
-    }
-    .logo {
-        font-size: 35px;
-        margin: 0;
-        padding-left: 50px;
-    }
-    .list {
-        padding-right: 100px;
-    }
-    nav ul li {
-        margin: 0 20px;
-    }
-    nav ul li a {
-        letter-spacing: 5px;
-        font-size: 20px;
-    }
-    .aboutme {
-        grid-column-gap: 100px;
-    }
-    .slogan h2 {
-        font-size: 60px;
-        justify-content: center;
-    }
-    .slogan h4 {
-        font-size: 30px;
-    }
-    .myimage img {
-        border-radius: 30px;
-        max-height: 350px;
-    }
-
-    .section-title {
-        padding: 90px 0px 50px 0px;
-        letter-spacing: 3px;
-        font-size: 32px;
-    }
-    .projectlist {
-        grid-template-columns: repeat(3,  300px);
-        grid-column-gap: 50px;
-        font-size: 14px;
-    }
-    .projectlist div {
-        border-radius: 30px;
-        padding: 0px;
-    }
-    .button {
-        margin-bottom: 20px;
-    }
-    #projects img {
-        padding-top: 20px;
-        width: 250px;
-        height: 250px;
-    }
-    #projects h2 {
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 5px;
-        padding: 10px 0;
-        color: white;
-        font-size: 30px;
-    }
-    #projects p {
-        max-width: 250px;
-        height: 120px;
-    }
-
-    footer {
-        padding: 0 50px;
-    }
-    
-    footer img {
-        max-width: 30px;
-    }
-    
-    footer h1 {
-        font-size: 25px;
-    }
-
+/* Contact */
+footer {
+    max-width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
 }
 
-
-@media screen and (max-width: 600px) {
-
-    * {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        max-width: 600px;
-        z-index: 1;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-    .logo {
-        font-size: 30px;
-        margin: 0;
-    }
-    .list {
-        padding: 0;
-    }
-    nav ul li {
-        margin: 0 5px;
-    }
-    nav ul li a {
-        padding: 0px 5px;
-        letter-spacing: 0px;
-        font-size: 15px;
-    }
-
-    .aboutme {
-        display: flex;
-        flex-direction: column;
-    }
-    .slogan h2 {
-        font-size: 40px;
-        justify-content: center;
-    }
-    .slogan h4 {
-        font-size: 25px;
-    }
-    .myimage {
-        scale: 60%;
-    }
-
-    .myprojects {
-        height: 100%;
-    }
-    .section-title {
-        padding: 130px 0px 60px 0px;
-        letter-spacing: 3px;
-        font-size: 35px;
-    }
-    .projectlist {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        letter-spacing: 0px;
-        font-size: 15px;
-        margin-bottom: 50px;
-    }
-    .project-conteiner {
-        display: grid;
-        grid-template-rows: auto auto auto auto;
-        justify-items: center;
-    }
-    .projectlist div {
-        padding: 20px 20px;
-        margin-bottom: 20px;
-    }
-
-    footer {
-        flex-direction: column;
-        padding: 30px 0px;
-    }
-    footer img {
-        max-width: 40px;
-        padding-right: 5px;
-    }
+.contact-card a{
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: .5em;
+    border-bottom: 2px solid blue;
+    margin: 1rem;
 }
 
-/*<?php include("index.html"); ?>*/
+.contact-card img{
+    max-height: 3em;
+    border-radius: 5px;
+}
+
+.contact-card h1 {
+    font-weight: 500;
+}
+
+.contact-card h3 {
+    color:black;
+    padding-left: .2em;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.contact-card:hover {
+    scale: 105%;
+}
