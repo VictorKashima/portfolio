@@ -1,115 +1,193 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@100&family=Montserrat&family=Poppins:wght@300&display=swap');
 
 * {
     transition: .5s;
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 200;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: black;
+    background: #000000;
 }
 
+body a {
+    text-decoration: none;
+}
+
+/* Nav Bar */
 header {
-    position: fixed;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0px 100px;
-    height: 60px;
-    align-items: center;
-    background: white;
-    width: 90%;
+    justify-content: flex-end;
+    position: fixed;
+    background: #FFFFFF;
+    width: 100%;
+    max-height: auto;
+    padding: 5px 30px;
+    z-index: 5;
 }
 
 .logo {
+    margin-right: auto;
+}
+
+.logo > a {
     font-family: 'Audiowide', cursive;
     font-weight: 400;
-    font-size: 40px;
-    align-items: center;
-    text-decoration: none;
+    font-size: 35px;
     color: black;
 }
 
 .logo:hover {
-    font-size: 37px;
+    scale: 105%;
 }
 
-.list {
-    list-style: none;
-    margin: 0;
+nav {
     display: flex;
     align-items: center;
 }
 
-nav ul li {
-    margin: 0 120px;
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
 nav ul li a {
-    padding: 0px 5px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
     color: black;
-    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 50px;
 }
 
-nav ul li a:hover {
-    color:rgb(50, 50, 50);
+nav ul li:hover {
+    scale: 105%;
 }
 
+/* Project Section */
 .projectdesc {
     height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
     background-size: 300% 300%;
-    background-image: linear-gradient(-50deg, #091E53, #2547AD, #122B71, #1C388D);
-    animation: colors 15s ease-in-out infinite;
+    background-image: linear-gradient(-50deg, #041A49, #062974, #020f2b);
+    animation: colors 10s ease-in-out infinite;
 }
 
 @keyframes colors {
-0% {
-    background-position: 0% 50%;
-}
-50% {
-    background-position: 50% 100%;
-}
-100% {
-    background-position: 0% 50%;
-}
-}
-
-.projectdesc h1, p {
-    color: white;
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .description {
-    padding-top: 150px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+}
+
+.text > h1 {
+    text-align: center;
+    font-weight: 900;
+}
+
+.text p, .text ul li {
+    width: 20em;
+    text-align: justify;
 }
 
 .divreturn {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-.return {
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    color: white;
+.divreturn > a {
+    background: #000000;
+    color: #FFFFFF;
+    padding: .6em;
+    border-radius: .5em;
+    font-size: 16px;
     text-transform: uppercase;
-    padding: 7px 12px;
-    background: black;
-    font-size: 22px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px black;
+    font-weight: 500;
 }
 
-.return:hover {
-    cursor: grab;
+/* Contact */
+footer {
+    max-width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-card a{
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: .5em;
+    border-bottom: 2px solid blue;
+    margin: 1rem;
+}
+
+.contact-card img{
+    max-height: 3em;
+    border-radius: 5px;
+}
+
+.contact-card h1 {
+    font-weight: 500;
+}
+
+.contact-card h3 {
+    color:black;
+    padding-left: .2em;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.contact-card:hover {
+    scale: 105%;
+}
+
+@media screen and (max-width:600px) {
+
+
+
+
+/* Contact */
+footer {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-card {
+    width: 170px;
+}
+
+.contact-card img{
+    max-height: 2.5em;
+    border-radius: 5px;
+}
+
+footer h1 {
+    font-size: 30px;
+}
+
 }

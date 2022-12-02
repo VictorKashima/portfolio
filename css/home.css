@@ -63,7 +63,6 @@ nav ul li a {
 /* About me section */
 .aboutme {
     height: 100vh;
-    background: blue;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
