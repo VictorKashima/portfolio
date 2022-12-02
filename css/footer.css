@@ -1,0 +1,60 @@
+/* Contact */
+footer {
+    max-width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-card a{
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: .5em;
+    border-bottom: 2px solid blue;
+    margin: 1rem;
+}
+
+.contact-card img{
+    max-height: 3em;
+    border-radius: 5px;
+}
+
+.contact-card h1 {
+    font-weight: 500;
+}
+
+.contact-card h3 {
+    color:black;
+    padding-left: .2em;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.contact-card:hover {
+    scale: 105%;
+}
+
+@media screen and (max-width:600px) {
+
+/* Contact */
+footer {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-card {
+    width: 170px;
+}
+
+.contact-card img{
+    max-height: 2.5em;
+    border-radius: 5px;
+}
+
+footer h1 {
+    font-size: 25px;
+}
+
+}

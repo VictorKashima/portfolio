@@ -19,55 +19,6 @@ body a {
     text-decoration: none;
 }
 
-/* Nav Bar */
-header {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    background: #FFFFFF;
-    width: 100%;
-    max-height: auto;
-    padding: 5px 30px;
-    z-index: 5;
-}
-
-.logo {
-    margin-right: auto;
-}
-
-.logo > a {
-    font-family: 'Audiowide', cursive;
-    font-weight: 400;
-    font-size: 35px;
-    color: black;
-}
-
-.logo:hover {
-    scale: 105%;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li a {
-    color: black;
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 0 50px;
-}
-
-nav ul li:hover {
-    scale: 105%;
-}
-
 /* Project Section */
 .projectdesc {
     height: 100vh;
@@ -128,66 +79,35 @@ nav ul li:hover {
     font-weight: 500;
 }
 
-/* Contact */
-footer {
-    max-width: 100%;
-    display: flex;
-    background: #FFFFFF;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contact-card a{
-    max-width: auto;
-    display: flex;
-    align-items: center;
-    padding-bottom: .5em;
-    border-bottom: 2px solid blue;
-    margin: 1rem;
-}
-
-.contact-card img{
-    max-height: 3em;
-    border-radius: 5px;
-}
-
-.contact-card h1 {
-    font-weight: 500;
-}
-
-.contact-card h3 {
-    color:black;
-    padding-left: .2em;
-    font-weight: 900;
-    font-size: 20px;
-}
-
-.contact-card:hover {
-    scale: 105%;
+.divreturn > a:hover {
+    font-size: 18px;
 }
 
 @media screen and (max-width:600px) {
 
+/* Project Section */
+.projectdesc {
+    max-height: auto;
+}
 
-
-
-/* Contact */
-footer {
-    justify-content: center;
+.description {
+    margin-top: 0;
     flex-direction: column;
+    align-items: center;
 }
 
-.contact-card {
-    width: 170px;
+.description iframe {
+    max-width: 426px;
+    max-height: 240px;
 }
 
-.contact-card img{
-    max-height: 2.5em;
-    border-radius: 5px;
+.text {
+    font-size: 16px;
+    margin-bottom: 1.5em
 }
 
-footer h1 {
-    font-size: 30px;
+.divreturn > a {
+    font-size: 16px;
 }
 
 }
