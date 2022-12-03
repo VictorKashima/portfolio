@@ -60,9 +60,13 @@ body a {
     font-weight: 900;
 }
 
-.text p, .text ul li {
+.text p {
     width: 20em;
     text-align: justify;
+}
+
+.text ul li {
+    width: 20em;
 }
 
 .divreturn {
