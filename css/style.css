@@ -35,6 +35,7 @@ ul {
 
 .wrapper {
     width: var(--site-util-width);
+    margin-inline: auto;
 }
 
 @media screen and (max-width:1024px) {
