@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@100&family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -11,14 +8,17 @@
 
 :root {
 
-    --site-util-width: min(100vw - 30px, 1500px);;
+    --primary-color: #FFF;
+    --secondary-color: #000;
+
+    --site-util-width: min(100vw - 100px, 1500px);
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     scroll-behavior: smooth;
-    color: #FFF;
+    color: var(--primary-color);
 }
 
 body {
@@ -31,4 +31,36 @@ a {
 
 ul {
     list-style: none;
+}
+
+.wrapper {
+    width: var(--site-util-width);
+}
+
+@media screen and (max-width:1024px) {
+
+    html {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:728px) {
+
+    html {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    :root {
+        --site-util-width: min(100vw - 30px, 1500px);
+    }
+
+    html {
+        font-size: 10px;
+    }
+
 }

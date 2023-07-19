@@ -1,3 +1,3 @@
 document.querySelector(".hamburger").addEventListener("click", () =>
-    document.querySelector(".header").classList.toggle("show-menu")
+    document.querySelector(".main-header").classList.toggle("show-menu")
 );
