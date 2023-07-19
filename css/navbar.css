@@ -1,4 +1,4 @@
-header {
+.main-header-background {
     width: 100vw;
     position: fixed;
     background: var(--primary-color);
