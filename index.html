@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="images/victorkashima-favicon.svg">
 </head>
 
@@ -55,68 +56,147 @@
     <div class="wrapper aboutme">
         <h1>VICTOR KASHIMA</h1>
         <div class="skills">
-            <h4>Programador Full Stack</h4>
-            <h4>& Designer</h4> 
+            <h4><b>Programador Full Stack</b></h4>
+            <h4>& <b>Designer</b></h4>
         </div>
     </div>
 </section>
 
-<section id="projects" class="myprojects" onload="load()">
-    <h1 class="section-title">projetos QUE PARTICIPEI</h1>
-    <div class="projectlist">
-        <div class="project-container">
-            <img src="images/VictorKashima-TPLinkGT.gif">
-            <h2>TP Link-GT</h2>
-            <p>Carrinho de controle remoto que possui modo de pilotagem manual e automático.</p>
-            <a href="projetos/tplinkgt.html" class="button">Sobre o projeto</a>
+<section class="portfolio-background">
+    <div class="portfolio">
+        <div>
+            <div class="wrapper title-carousel">
+                <h2>Programação</h2>
+                <button onclick="previousSlide()"><img src="images/angle-left-solid.svg"></button>
+                <button onclick="nextSlide()"><img src="images/angle-right-solid.svg"></button>
+            </div>
+            <div class="portfolio-content">
+                <div class="story">
+                    <p>Comecei programando em Python aprendendo lógica de programação e utilização de bibliotecas. Depois comecei a aprender HTML e CSS para desenvolver sites, tives algumas ideias de interação e comecei a implementar Java Script em meus projetos. Hoje estou desenvolvendo projetos Full Stack com Angular e Java.</p>
+                    <ul>
+                        <li>
+                            Python
+                        </li>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            JavaScript
+                        </li>
+                        <li>
+                            Java
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <div>
+                                <a href="projetos/agrocrawler.html">
+                                    <img src="images/VictorKashima-AgroCrawler.jpg" alt="Logo AgroCrawler">
+                                    <div class="technologies">
+                                        <h4>Python</h4>
+                                    </div>
+                                    <h3>Agro Crawler</h3>
+                                    <p>Chatbot do Telegram para receber notícias e preços de arroz, café e soja. Informações atualizadas do agronegócio de forma rápida e prática.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="project-container">
-            <img src="images/VictorKashima-AgroCrawler.jpg">
-            <h2>Agro Crawler</h2>
-            <p>Chat bot do telegram que envia notícias e/ou preços de arroz, café e soja.</p>
-            <a href="projetos/agrocrawler.html" class="button">Sobre o projeto</a>
+        <hr class="wrapper">
+
+        <div>
+            <div class="wrapper title-carousel">
+                <h2>Design</h2>
+                <button onclick="previousSlide()"><img src="images/angle-left-solid.svg"></button>
+                <button onclick="nextSlide()"><img src="images/angle-right-solid.svg"></button>
+            </div>
+            <div class="portfolio-content">
+                <div class="story">
+                    <p>Editava fotos por vontade própria em projetos pessoais e comecei a estagiar como designer, estou na área há 1 ano e tenho autonomia nos principais softwares da Adobe em order de masterização:</p>
+                    <ul>
+                        <li>
+                            Illustrator
+                        </li>
+                        <li>
+                            Photoshop
+                        </li>
+                        <li>
+                            Premiere
+                        </li>
+                        <li>
+                            After Effects
+                        </li>
+                        <li>
+                            LightRoom
+                        </li>
+                        <li>
+                            InDesign
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <div>
+                                <a href="projetos/agrocrawler.html">
+                                    <img src="images/design/toplanting-top-x3-peca-ja-o-seu-1x1.jpg" alt="Logo AgroCrawler">
+                                    <div class="technologies">
+                                        <h4>Photoshop</h4>
+                                    </div>
+                                    <h3>Criativo para campanha</h3>
+                                    <p>Feito para fazer campanha em tráfego pago com o intuito de aumentar os leads do site e consequentemente aumentar as vendas do TOP X3 da TOPlanting</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="project-container">
-            <img src="images/VictorKashima-Alex.png">
-            <h2>Alex</h2>
-            <p>Assistente Virtual em forma de site que fala preço do dólar, temperatura e faz pesquisas personalizadas.</p>
-            <a href="projetos/alex.html" class="button">Sobre o projeto</a>
-        </div>
     </div>
 </section>
 
-<footer id="footer">
+<!-- <footer id="footer">
     <h1>FALE COMIGO</h1>
-    <div class="contact-card">
+    <div class="contact-swiper-slide">
         <a href="https://www.linkedin.com/in/victorkashima/" target="_blank">
         <img src="images/VictorKashima-LinkedIn.png">
         <h3>LinkedIn</h3>
         </a> 
     </div>
-    <div class="contact-card">
+    <div class="contact-swiper-slide">
         <a href="https://github.com/VictorKashima" target="_blank">
         <img src="images/VictorKashima-GitHub.png">
         <h3>GitHub</h3>
         </a> 
     </div>
-    <div class="contact-card">
+    <div class="contact-swiper-slide">
         <a href="https://wa.me/5514997972772?text=Olá vim do seu portoflio" target="_blank">
         <img src="images/VictorKashima-WhatsApp.png">
         <h3>WhatsApp</h3>
         </a>
     </div>
-    <div class="contact-card">
+    <div class="contact-swiper-slide">
         <a href="https://discord.com/users/852667698168332319" target="_blank">
         <img src="images/VictorKashima-Discord.png">
         <h3>Discord</h3>
         </a>
     </div>
-</footer>
+</footer> -->
 
-<script src="js/index.js"></script>
-<script src="js/hamburger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/hamburger.js"></script>
 </body>
 
 <!-- Version: 0.3-->

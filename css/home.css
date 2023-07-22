@@ -1,5 +1,7 @@
 .aboutme-background {
-    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    min-height: 91vh;
     background-size: 300% 300%;
     background-image: linear-gradient(-50deg, #041A49, #062974, #020f2b);
     animation: blue-move 10s ease-in-out infinite;
@@ -18,170 +20,135 @@
 }
 
 .aboutme {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;    
-}
-
-.slogan {
-    text-align: center;
-}
-
-.slogan h2 {
-    font-family: 'Audiowide', cursive;
-    font-size: 4rem;
-}
-
-.slogan h4 {
-    font-size: 2.2rem;
-    font-weight: 900;
-}
-
-.myImage {
-    border-radius: 2rem;
-    width: 80%;
-}
-
-/* Projects */
-.myprojects {
-    min-height: 100vh;
-    position: relative;
-}
-
-.myprojects::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.1;
-    z-index: -1;
-    background-image: url(../images/VictorKashima-Background2.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 900;
-    padding-top: 8rem;
-}
-
-.projectlist {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 4rem;
-}
-
-.project-container {
-    max-width: 20%;
-    background: rgba(0, 0, 30, 0.7);
-    color: #FFF;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2em;
-    border-radius: 2rem;
-    text-align: center;
 }
 
-.project-container img {
-    max-width: 100%;
-    border-radius: 1.5rem;
-}
-
-.project-container h2 {
-    text-transform: uppercase;
+.aboutme h1 {
+    font-size: 7rem;
     font-weight: 900;
-    padding: 1em 0 .3em;
+    font-style: italic;
 }
 
-.project-container p {
+.aboutme h4 {
+    font-size: 3rem;
     font-weight: 500;
-    font-size: 1rem;
-    min-height: 7em;
+    font-style: italic;
+    text-align: right;
 }
 
-.button {
-    background: #FFF;
-    padding: .5em 1em;
-    border-radius: .5em;
-    font-weight: 900;
-    color: #000;
-    text-transform: uppercase;
+.portfolio-background {
+    color: var(--secondary-color);
+}
+
+.title-carousel {
+    display: flex;
+    gap: 1.5rem;
+    padding: 4rem 0 2rem;
+}
+
+.title-carousel h2 {
+    flex-grow: 1;
+    font-size: 2.25rem;
+}
+
+.title-carousel button {
+    background: #76b900;
+    border: none;
+    padding: 0 0.7rem;
     transition: all .5s ease-in-out;
 }
 
-.button:hover {
-    scale: 105%;
+.title-carousel img {
+    height: 1rem;
 }
 
-/* Responsive 600px*/
-@media screen and (max-width:600px) {
-
-/* About me section */
-.aboutme {
-    justify-content:center;
-    background-size: 200% 200%;
-    flex-direction: column;
+.title-carousel button:hover {
+    background: #AFA;
 }
 
-.slogan {
+.portfolio-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding-left: calc(50vw - 650px);
+    margin-bottom: 2rem;
+}
+
+.story p {
+    font-size: 1.3rem;
+    line-height: 1.7em;
+    margin-bottom: 1rem;
+}
+
+.story ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.story ul li {
+    padding: .5em 1em;
+    border-radius: 10rem;
+    background: var(--dark-blue);
+    color: var(--primary-color);
+}
+
+.swiper {
+    width: 100%;
+}
+
+/* .card {
+    margin: 1rem 0;
+} */
+
+.card > div {
+    box-shadow: 0 0 5px 0 #0009;
+    margin: 10px;
+}
+
+/* .card:nth-last-child(1) {
+    box-shadow: none;
+} */
+
+.card h4,
+.card h3,
+.card p {
+    padding: 0 1rem;
+}
+
+.card img {
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.card h4 {
+    font-weight: 600;
+    padding-bottom: .7rem;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    padding-bottom: .7rem;
+}
+
+.card p {
+    line-height: 1.6em;
     padding-bottom: 2rem;
 }
 
-.myimage img {
-    width: 80%;
+@media screen and (max-width:1400px) {
+
+    .portfolio-content {
+        padding-left: 50px;
+    }
+
 }
 
-/* Projects */
-.myprojects {
-    height: auto;
-}
+@media screen and (max-width:480px) {
 
-.section-title {
-    font-size: 25px;
-    padding-top: 3em;
-}
-
-.projectlist {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3em;
-}
-
-.project-container {
-    max-width: 15em;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    border-radius: 20px;
-    margin-bottom: 1em;
-}
-
-.project-container img {
-    max-width: 100%;
-    border-radius: 20px;
-}
-
-.project-container h2 {
-    font-size: 20px;
-}
-
-.project-container p {
-    font-size: 14px;
-    height: auto;
-}
-
-.button {
-    border-radius: 5px;
-    font-size: 14px;
-}
+    .portfolio-content {
+        padding-left: 15px;
+    }
 
 }

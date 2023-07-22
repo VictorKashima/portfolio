@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -10,8 +10,10 @@
 
     --primary-color: #FFF;
     --secondary-color: #000;
+    --light-blue: #00c8ff;
+    --dark-blue: #001428;
 
-    --site-util-width: min(100vw - 100px, 1500px);
+    --site-util-width: min(100vw - 100px, 1300px);
 }
 
 html {
@@ -22,15 +24,20 @@ html {
 }
 
 body {
-    background: #000;
+    background: var(--primary-color);
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
     list-style: none;
+}
+
+hr {
+    color: #0005;
 }
 
 .wrapper {
@@ -57,7 +64,7 @@ ul {
 @media screen and (max-width:480px) {
 
     :root {
-        --site-util-width: min(100vw - 30px, 1500px);
+        --site-util-width: min(100vw - 30px, 1300px);
     }
 
     html {
