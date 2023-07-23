@@ -37,6 +37,14 @@
     text-align: right;
 }
 
+.aboutme a {
+    margin-top: 5rem;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+/* PORTFOLIO */
 .portfolio-background {
     color: var(--secondary-color);
 }
@@ -53,7 +61,7 @@
 }
 
 .title-carousel button {
-    background: #76b900;
+    background: var(--light-blue);
     border: none;
     padding: 0 0.7rem;
     transition: all .5s ease-in-out;
@@ -64,12 +72,12 @@
 }
 
 .title-carousel button:hover {
-    background: #AFA;
+    filter: saturate(2);
 }
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2.3fr;
     gap: 40px;
     padding-left: calc(50vw - 650px);
     margin-bottom: 2rem;
@@ -78,7 +86,7 @@
 .story p {
     font-size: 1.3rem;
     line-height: 1.7em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .story ul {
@@ -104,11 +112,7 @@
     width: 100%;
 }
 
-/* .card {
-    margin: 1rem 0;
-} */
-
-.card > div {
+.card-margin {
     box-shadow: 0 0 5px 0 #0009;
     margin: 10px;
 }
@@ -117,15 +121,14 @@
     box-shadow: none;
 }
 
-.technologies,
-.card h3,
-.card p {
-    padding: 0 1rem;
-}
-
 .portfolio-image {
     width: 100%;
-    padding-bottom: 1.5rem;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem 2rem;
 }
 
 .technologies img {
@@ -140,7 +143,20 @@
 
 .card p {
     line-height: 1.6em;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.project-info a {
+    border: 1px solid var(--dark-blue);
+    align-self: flex-end;
+    padding: .3rem 1rem;
+    border-radius: 10rem;
+    transition: all .3s ease-in-out;
+}
+
+.project-info a:hover {
+    background: var(--dark-blue);
+    color: var(--primary-color);
 }
 
 @media screen and (max-width:1400px) {
