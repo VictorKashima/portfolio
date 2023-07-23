@@ -6,13 +6,20 @@
 
 .footer {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
 .footer h2 {
     text-decoration: underline;
+    flex-grow: 1;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 1rem;
 }
 
 .contact-card {
@@ -22,9 +29,22 @@
 .contact-card a {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .contact-card a img {
     height: 3.5rem;
+}
+
+@media screen and (max-width:1024px) {
+
+    .footer {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .social-media {
+        flex-wrap: wrap;
+    }
+
 }

@@ -1,7 +1,7 @@
 .aboutme-background {
     display: flex;
     align-items: center;
-    min-height: 91vh;
+    min-height: 93vh;
     background-size: 300% 300%;
     background-image: linear-gradient(-50deg, #041A49, #062974, #020f2b);
     animation: blue-move 10s ease-in-out infinite;
@@ -38,7 +38,7 @@
 }
 
 .aboutme a {
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: center;
     text-decoration: underline;
     font-size: 1.5rem;
@@ -51,7 +51,7 @@
 
 .title-carousel {
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
     padding: 4rem 0 2rem;
 }
 
@@ -60,25 +60,35 @@
     font-size: 2.25rem;
 }
 
-.title-carousel button {
+.buttons-carousel {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.mobile {
+    display: none;
+}
+
+.buttons-carousel button {
     background: var(--light-blue);
     border: none;
-    padding: 0 0.7rem;
+    padding: .5rem 0.7rem;
     transition: all .5s ease-in-out;
 }
 
-.title-carousel img {
+.buttons-carousel img {
     height: 1rem;
 }
 
-.title-carousel button:hover {
+.buttons-carousel button:hover {
     filter: saturate(2);
 }
 
 .portfolio-content {
     display: grid;
     grid-template-columns: 1fr 2.3fr;
-    gap: 40px;
+    gap: 2rem;
     padding-left: calc(50vw - 650px);
     margin-bottom: 3rem;
 }
@@ -93,6 +103,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .story ul li {
@@ -167,10 +178,31 @@
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
 
     .portfolio-content {
-        padding-left: 15px;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .buttons-carousel {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    .aboutme h1 {
+        font-size: 5rem;
+    }
+    
+    .aboutme h4 {
+        font-size: 2rem;
     }
 
 }
