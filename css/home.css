@@ -88,10 +88,16 @@
 }
 
 .story ul li {
+    display: flex;
+    gap: .5rem;
     padding: .5em 1em;
     border-radius: 10rem;
-    background: var(--dark-blue);
+    background: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.story ul li img {
+    height: 1.3rem;
 }
 
 .swiper {
@@ -107,23 +113,23 @@
     margin: 10px;
 }
 
-/* .card:nth-last-child(1) {
+.card:nth-last-child(1) {
     box-shadow: none;
-} */
+}
 
-.card h4,
+.technologies,
 .card h3,
 .card p {
     padding: 0 1rem;
 }
 
-.card img {
+.portfolio-image {
     width: 100%;
     padding-bottom: 1.5rem;
 }
 
-.card h4 {
-    font-weight: 600;
+.technologies img {
+    height: 2.3rem;
     padding-bottom: .7rem;
 }
 
