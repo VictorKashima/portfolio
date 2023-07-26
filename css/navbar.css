@@ -59,14 +59,12 @@
     padding: 1px;
     border-radius: 10px;
     background: var(--secondary-color);
-    box-shadow: 0.1rem 0.1rem 5px var(--secondary-color);
     transition: transform .5s;
 }
 
 .show-menu #line1 {
     transform: rotate(45deg) translate(.45rem, .9rem);
     background: #F00;
-    box-shadow: none;
     z-index: 5;
 }
 
@@ -84,8 +82,7 @@
     height: 100vh;
     width: 100%;
     background: var(--primary-color);
-    box-shadow: 10px 5px 15px 10px var(--primary-color);
-    position: fixed; 
+    position: fixed;
     top: 0;
     right: -110%;
     transition: all .8s ease-in-out;
