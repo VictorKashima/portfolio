@@ -78,11 +78,17 @@
 }
 
 .portfolio-content {
-    display: grid;
-    grid-template-columns: 1fr 2.3fr;
-    gap: 2rem;
+    display: flex;
     padding-left: calc(50vw - 650px);
     margin-bottom: 3rem;
+}
+
+.story {
+    width: 30%;
+}
+
+.swiper-one {
+    width: 70%;
 }
 
 .story p {
@@ -173,8 +179,13 @@
 @media screen and (max-width:768px) {
 
     .portfolio-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 2rem;
         padding: 0;
+    }
+
+    .portfolio-content > div {
+        width: 100%;
     }
 
     .buttons-carousel {
