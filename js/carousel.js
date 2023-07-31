@@ -3,29 +3,29 @@ const swiperOne = new Swiper('#first-carousel', {
     loop: false,
     speed: 500,
 
-    slidesPerView: 1.5,
+    slidesPerView: 1.1,
     spaceBetween: 20,
     slidesPerGroup: 1,
     rewind: true,
 
-    breakpoints: {
+    // breakpoints: {
 
-        768: {
-          slidesPerView: 1.6,
-          spaceBetween: 40
-        },
+    //     768: {
+    //       slidesPerView: 1.6,
+    //       spaceBetween: 40
+    //     },
 
-        1000: {
-          slidesPerView: 2,
-          spaceBetween: 40
-        },
+    //     1000: {
+    //       slidesPerView: 2,
+    //       spaceBetween: 40
+    //     },
         
-        1368: {
-          slidesPerView: 2.7,
-          spaceBetween: 40
-        },
+    //     1368: {
+    //       slidesPerView: 2.7,
+    //       spaceBetween: 40
+    //     },
 
-    },
+    // },
 
 });
 
@@ -41,29 +41,29 @@ const swiperTwo = new Swiper('#second-carousel', {
 
   loop: false,
   speed: 500,
-  slidesPerView: 1.5,
+  slidesPerView: 1.1,
   spaceBetween: 20,
   slidesPerGroup: 1,
   rewind: true,
 
-  breakpoints: {
+  // breakpoints: {
 
-      768: {
-        slidesPerView: 1.6,
-        spaceBetween: 40
-      },
+  //     768: {
+  //       slidesPerView: 1.6,
+  //       spaceBetween: 40
+  //     },
 
-      1000: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
+  //     1000: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 40
+  //     },
       
-      1368: {
-        slidesPerView: 2.7,
-        spaceBetween: 40
-      },
+  //     1368: {
+  //       slidesPerView: 2.7,
+  //       spaceBetween: 40
+  //     },
 
-  },
+  // },
 
 });
 
