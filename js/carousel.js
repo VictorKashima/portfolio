@@ -1,32 +1,40 @@
-const swiperOne = new Swiper('#first-carousel', {
+const swiperOne = new Swiper('.swiper-one', {
 
-    loop: false,
-    speed: 500,
+  loop: true,
+  speed: 1000,
 
-    slidesPerView: 1.1,
-    spaceBetween: 20,
-    slidesPerGroup: 1,
-    rewind: true,
-    cssMode: true,
+  allowTouchMove: false,
 
-    breakpoints: {
+  cssMode: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
 
-        768: {
-          slidesPerView: 1.6,
-          spaceBetween: 40
-        },
+  // loop: false,
+  // speed: 500,
+  // slidesPerView: 1.1,
+  // spaceBetween: 20,
+  // slidesPerGroup: 1,
+  // rewind: true,
+  // cssMode: true,
 
-        1000: {
-          slidesPerView: 2,
-          spaceBetween: 40
-        },
-        
-        1368: {
-          slidesPerView: 2.7,
-          spaceBetween: 40
-        },
+  // breakpoints: {
 
-    },
+  //     768: {
+  //       slidesPerView: 1.6,
+  //       spaceBetween: 40
+  //     },
+
+  //     1000: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 40
+  //     },
+      
+  //     1368: {
+  //       slidesPerView: 2.7,
+  //       spaceBetween: 40
+  //     },
+
+  // },
 
 });
 
@@ -38,34 +46,43 @@ function firstNextSlide() {
   swiperOne.slideNext();
 }
 
-const swiperTwo = new Swiper('#second-carousel', {
+const swiperTwo = new Swiper('.swiper-two', {
 
-  loop: false,
-  speed: 500,
-  slidesPerView: 1.1,
-  spaceBetween: 20,
-  slidesPerGroup: 1,
-  rewind: true,
+  loop: true,
+  speed: 1000,
+
+  allowTouchMove: false,
+
   cssMode: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
 
-  breakpoints: {
+  // loop: false,
+  // speed: 500,
+  // slidesPerView: 1.1,
+  // spaceBetween: 20,
+  // slidesPerGroup: 1,
+  // rewind: true,
+  // cssMode: true,
 
-      768: {
-        slidesPerView: 1.6,
-        spaceBetween: 40
-      },
+  // breakpoints: {
 
-      1000: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
+  //     768: {
+  //       slidesPerView: 1.6,
+  //       spaceBetween: 40
+  //     },
+
+  //     1000: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 40
+  //     },
       
-      1368: {
-        slidesPerView: 2.7,
-        spaceBetween: 40
-      },
+  //     1368: {
+  //       slidesPerView: 2.7,
+  //       spaceBetween: 40
+  //     },
 
-  },
+  // },
 
 });
 
