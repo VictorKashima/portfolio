@@ -1,12 +1,12 @@
 const swiperOne = new Swiper('#first-carousel', {
 
-    loop: false,
-    speed: 500,
+    // loop: false,
+    // speed: 500,
 
-    slidesPerView: 1.1,
-    spaceBetween: 20,
-    slidesPerGroup: 1,
-    rewind: true,
+    // slidesPerView: 1.1,
+    // spaceBetween: 20,
+    // slidesPerGroup: 1,
+    // rewind: true,
 
     // breakpoints: {
 
@@ -39,12 +39,12 @@ function firstNextSlide() {
 
 const swiperTwo = new Swiper('#second-carousel', {
 
-  loop: false,
-  speed: 500,
-  slidesPerView: 1.1,
-  spaceBetween: 20,
-  slidesPerGroup: 1,
-  rewind: true,
+  // loop: false,
+  // speed: 500,
+  // slidesPerView: 1.1,
+  // spaceBetween: 20,
+  // slidesPerGroup: 1,
+  // rewind: true,
 
   // breakpoints: {
 
