@@ -9,8 +9,8 @@ const swiperOne = new Swiper('.swiper-one', {
 
   loop: false,
   speed: 500,
-  slidesPerView: 1.1,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  // spaceBetween: 20,
   slidesPerGroup: 1,
   rewind: true,
   cssMode: true,
@@ -55,8 +55,8 @@ const swiperTwo = new Swiper('.swiper-two', {
 
   loop: false,
   speed: 500,
-  slidesPerView: 1.1,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  // spaceBetween: 20,
   slidesPerGroup: 1,
   rewind: true,
   cssMode: true,
