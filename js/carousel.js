@@ -1,7 +1,7 @@
-const swiperOne = new Swiper('.first-carousel', {
+const swiperOne = new Swiper('#first-carousel', {
 
     loop: false,
-    speed: 400,
+    speed: 500,
 
     slidesPerView: 1.5,
     spaceBetween: 20,
@@ -37,10 +37,10 @@ function firstNextSlide() {
   swiperOne.slideNext();
 }
 
-const swiperTwo = new Swiper('.second-carousel', {
+const swiperTwo = new Swiper('#second-carousel', {
 
   loop: false,
-  speed: 400,
+  speed: 500,
   slidesPerView: 1.5,
   spaceBetween: 20,
   slidesPerGroup: 1,
