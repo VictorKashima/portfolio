@@ -1,12 +1,5 @@
 const swiperOne = new Swiper('.swiper-one', {
 
-  // loop: true,
-  // speed: 1000,
-  // allowTouchMove: false,
-  // cssMode: true,
-  // slidesPerView: 1,
-  // slidesPerGroup: 1,
-
   loop: false,
   speed: 500,
   slidesPerView: 1,
@@ -28,8 +21,8 @@ const swiperOne = new Swiper('.swiper-one', {
       },
       
       1368: {
-        slidesPerView: 2.7,
-        spaceBetween: 40
+        slidesPerView: 3,
+        spaceBetween: 5
       },
 
   },
@@ -45,13 +38,6 @@ function firstNextSlide() {
 }
 
 const swiperTwo = new Swiper('.swiper-two', {
-
-  // loop: true,
-  // speed: 1000,
-  // allowTouchMove: false,
-  // cssMode: true,
-  // slidesPerView: 1,
-  // slidesPerGroup: 1,
 
   loop: false,
   speed: 500,
