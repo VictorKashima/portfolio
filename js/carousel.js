@@ -60,8 +60,8 @@ const swiperTwo = new Swiper('.swiper-two', {
       },
       
       1368: {
-        slidesPerView: 2.7,
-        spaceBetween: 40
+        slidesPerView: 3,
+        spaceBetween: 5
       },
 
   },
