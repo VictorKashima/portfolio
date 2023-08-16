@@ -22,7 +22,7 @@ const swiperOne = new Swiper('.swiper-one', {
       
       1368: {
         slidesPerView: 3,
-        spaceBetween: 5
+        spaceBetween: 20
       },
 
   },
@@ -61,7 +61,7 @@ const swiperTwo = new Swiper('.swiper-two', {
       
       1368: {
         slidesPerView: 3,
-        spaceBetween: 5
+        spaceBetween: 20
       },
 
   },
