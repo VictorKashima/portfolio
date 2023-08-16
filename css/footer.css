@@ -16,9 +16,9 @@
 }
 
 .social-media {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     flex-grow: 1;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
@@ -31,6 +31,7 @@
     align-items: center;
     gap: .5rem;
     transition: .3s all ease-in-out;
+    justify-content: right;
 }
 
 .contact-card a:hover {
@@ -51,12 +52,20 @@
 
     .footer {
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 2rem 0;
+    }
+
+    .footer h2 {
+        margin-bottom: 1rem;
     }
 
     .social-media {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 2rem;
+    }
+    
+    .contact-card a {
+        justify-content: flex-start;
     }
 
 }
