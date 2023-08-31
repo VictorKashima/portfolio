@@ -28,3 +28,5 @@ function addClassOnWidthChange() {
 addClassOnWidthChange();
 
 window.addEventListener('resize', addClassOnWidthChange);
+
+AOS.init();
