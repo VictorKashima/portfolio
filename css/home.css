@@ -16,17 +16,42 @@
     }
 }
 
+@keyframes left-to-right {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes right-to-left {
+    from {
+        opacity: 0;
+        transform: translateX(+100px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 .aboutme {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 93vh;
+    min-height: 100vh;
 }
 
 .aboutme h1 {
     font-size: 7rem;
     font-weight: 900;
     font-style: italic;
+    animation: left-to-right 1s;
 }
 
 .aboutme h4 {
@@ -34,6 +59,7 @@
     font-weight: 500;
     font-style: italic;
     text-align: right;
+    animation: right-to-left 2s;
 }
 
 /* PORTFOLIO */
@@ -80,7 +106,7 @@
 .portfolio-content {
     display: flex;
     justify-content: space-between;
-    padding-left: calc(50vw - 650px);
+    padding-left: calc(50vw - 660px);
     margin-bottom: 3rem;
 }
 
@@ -175,7 +201,7 @@
 @media screen and (max-width:1400px) {
 
     .portfolio-content {
-        padding-left: 50px;
+        padding-left: 40px;
     }
 
 }
