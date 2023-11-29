@@ -40,6 +40,18 @@
     }
 }
 
+@keyframes up-to-down {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 .aboutme {
     display: flex;
     justify-content: center;
@@ -51,7 +63,13 @@
     font-size: 7rem;
     font-weight: 900;
     font-style: italic;
-    animation: left-to-right 1s;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s, transform 1s;
+}
+
+.left-to-right {
+    animation: left-to-right 1s forwards;
 }
 
 .aboutme h4 {
@@ -59,7 +77,13 @@
     font-weight: 500;
     font-style: italic;
     text-align: right;
-    animation: right-to-left 2s;
+    opacity: 0;
+    transform: translateX(+100px);
+    transition: opacity 2s, transform 2s;
+}
+
+.right-to-left {
+    animation: right-to-left 2s forwards;
 }
 
 /* PORTFOLIO */
@@ -101,6 +125,10 @@
 
 .buttons-carousel button:hover {
     filter: saturate(2);
+}
+
+.portfolio > div {
+    animation: up-to-down 1s;
 }
 
 .portfolio-content {
@@ -175,6 +203,7 @@
     height: 2.3rem;
     padding-bottom: .7rem;
 }
+
 .card h3 {
     font-size: 1.25rem;
     padding-bottom: .7rem;
