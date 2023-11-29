@@ -8,10 +8,16 @@
 
 :root {
 
+    /* --primary-color: #001428;
+    --secondary-color: #FFF;
+    --third-color: #00c8ff;
+    --fourth-color: #001428; */
+
+
     --primary-color: #FFF;
     --secondary-color: #000;
-    --light-blue: #00c8ff;
-    --dark-blue: #001428;
+    --third-color: #00c8ff;
+    --fourth-color: #001428;
 
     --site-util-width: min(100vw - 100px, 1300px);
 }
@@ -37,7 +43,8 @@ ul {
 }
 
 hr {
-    color: #0005;
+    color: var(--secondary-color);
+    opacity: 0.3;
 }
 
 .wrapper {
