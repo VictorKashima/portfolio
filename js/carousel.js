@@ -4,7 +4,7 @@ const swiperOne = new Swiper('.swiper-one', {
   speed: 500,
   slidesPerView: 1,
   spaceBetween: 0,
-  slidesPerGroup: 1,
+  slidesPerGroup: 3,
   rewind: true,
   cssMode: true,
 
